@@ -13,5 +13,5 @@ FindRecentEvents <- function(input, intervalType, intervalLength){
   }
   output <- as.data.frame(unlist(sapply(interv, fx, y = input)))
   colnames(output) = "NInRange"
-  output
+  return(output)
 }
